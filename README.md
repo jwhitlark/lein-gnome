@@ -6,6 +6,8 @@ A Leiningen plugin using using ClojureScript to create native Gnome3 application
 
 ## Libraries required (Ubuntu)
 
+Fixme: verify/update details.
+
  - build-essential
  - gjs (dev?)
  - ???
@@ -31,9 +33,36 @@ seesaw like wrapper for Gnome3 library.
 
 Put `[lein-gnome "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
 
-FIXME: and add an example usage that actually makes sense:
+FIXME: and add an example usage once we get some working code:
 
     $ lein gnome
+
+## Reference
+
+### Gnome Javascript engine and bindings page
+https://live.gnome.org/Gjs
+
+### Gnome Javascript examples
+http://git.gnome.org/browse/gjs/tree/examples
+
+gtk.js is the first one I successfully translated.
+
+### Tutorials for just about everything javascript on Gnome
+http://developer.gnome.org/gnome-devel-demos/3.5/js.html.en
+
+### Best Code References I've found
+http://www.roojs.com/seed/gir-1.2-gtk-3.0/gjs/Gtk.Application.html
+
+## Notes
+
+There are two Javascript bindings to gnome.  gjs based on Mozilla
+SpiderMonkey, and seed based of Webkit.  See
+https://live.gnome.org/GObjectIntrospection/BindingsDocumentation for
+more details.
+
+Note that some of the above documentation is from seed projects, and
+so isn't quite what we need, (I'm assuming gjs, for the moment), but
+is very close.  Be aware.
 
 ## License
 
