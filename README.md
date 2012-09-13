@@ -1,6 +1,6 @@
 # lein-gnome
 
-A Leiningen plugin using using ClojureScript to create native Gnome3 applications.
+A Leiningen plugin using ClojureScript to create native Gnome3 applications.
 
 ## Status - Currently informational only - no working code.
 
